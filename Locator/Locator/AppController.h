@@ -17,8 +17,12 @@
 @property (nonatomic, retain) NSArray* SSIDArray;
 
 @property (nonatomic, retain) IBOutlet NSTableView* networkTableView;
+@property (nonatomic, retain) IBOutlet NSTextFieldCell* xValue;
+@property (nonatomic, retain) IBOutlet NSTextFieldCell* yValue;
+@property (nonatomic, retain) IBOutlet NSTextFieldCell* zValue;
     
-- (void)starterMethod;
+- (void)networkInit;
+- (void)reloadSMSData:(NSTimer *)timer;
 - (IBAction)rescanNetworks:(id)sender;
 
 @end

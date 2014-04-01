@@ -21,13 +21,19 @@
 @synthesize SSIDArray;
 
 @synthesize networkTableView;
+@synthesize xValue;
+@synthesize yValue;
+@synthesize zValue;
+
+struct sms_acceleration accel = {.x = 1.0 , .y = 1.0 , .z = 1.0};
 
 #pragma mark initialisation methods
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
-        [self starterMethod];
+        [self networkInit];
+        [self SMSStartup];
         NSLog(@"Initiated AppController With Nib");
     }
     return self;
@@ -36,19 +42,38 @@
 - (id)initWithCoder:(NSCoder *)aDecoder {
     self = [super initWithCoder:aDecoder];
     if (self) {
-        [self starterMethod];
+        [self networkInit];
+        [self SMSStartup];
         NSLog(@"Initiated AppController With Coder");
     }
     return self;
 }
 
-- (void)starterMethod {
+- (void)networkInit {
     self.interface = [CWInterface interfaceWithName:nil];
     self.SSIDs = [self.interface scanForNetworksWithSSID:nil error:nil];
-    NSLog(@"Called starterMethod");
+    NSLog(@"Called networkInit");
+}
+
+- (void)SMSStartup {
+    if (smsStartup(nil, nil) == 0)
+        NSLog(@"Started SMS successfully");
+    else
+        NSLog(@"Could not start SMS");
+    //[self reloadSMSData:nil];
+    NSTimer* timer = [NSTimer timerWithTimeInterval:0.1 target:self selector:@selector(reloadSMSData:) userInfo:nil repeats:YES];
+    [[NSRunLoop mainRunLoop]addTimer:timer forMode:NSDefaultRunLoopMode];
 }
 
 #pragma mark accelerometer helper methods
+
+- (void)reloadSMSData:(NSTimer *)timer {
+    NSLog(@"Called reloadSMSData method");
+    smsGetData(&accel);
+    [self.xValue setStringValue:[NSString stringWithFormat:@"%f",accel.x]];
+    [self.yValue setStringValue:[NSString stringWithFormat:@"%f",accel.y]];
+    [self.zValue setStringValue:[NSString stringWithFormat:@"%f",accel.z]];
+}
 
 #pragma mark Network helper methods
 
