@@ -1,0 +1,520 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4195232F18EB20DA0066C05F /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4195232E18EB20DA0066C05F /* Cocoa.framework */; };
+		4195233918EB20DA0066C05F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4195233718EB20DA0066C05F /* InfoPlist.strings */; };
+		4195233B18EB20DA0066C05F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4195233A18EB20DA0066C05F /* main.m */; };
+		4195233F18EB20DA0066C05F /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 4195233D18EB20DA0066C05F /* Credits.rtf */; };
+		4195234218EB20DA0066C05F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4195234118EB20DA0066C05F /* AppDelegate.m */; };
+		4195234518EB20DA0066C05F /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4195234318EB20DA0066C05F /* MainMenu.xib */; };
+		4195234818EB20DA0066C05F /* Locator.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4195234618EB20DA0066C05F /* Locator.xcdatamodeld */; };
+		4195234A18EB20DA0066C05F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4195234918EB20DA0066C05F /* Images.xcassets */; };
+		4195235118EB20DA0066C05F /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4195235018EB20DA0066C05F /* XCTest.framework */; };
+		4195235218EB20DA0066C05F /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4195232E18EB20DA0066C05F /* Cocoa.framework */; };
+		4195235A18EB20DA0066C05F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4195235818EB20DA0066C05F /* InfoPlist.strings */; };
+		4195235C18EB20DA0066C05F /* LocatorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4195235B18EB20DA0066C05F /* LocatorTests.m */; };
+		4195237718EB27630066C05F /* smslib.m in Sources */ = {isa = PBXBuildFile; fileRef = 4195237618EB27630066C05F /* smslib.m */; };
+		4195237A18EB28150066C05F /* AppController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4195237918EB28150066C05F /* AppController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4195235318EB20DA0066C05F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4195232318EB20DA0066C05F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4195232A18EB20DA0066C05F;
+			remoteInfo = Locator;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		4195232B18EB20DA0066C05F /* Locator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Locator.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4195232E18EB20DA0066C05F /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		4195233118EB20DA0066C05F /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		4195233218EB20DA0066C05F /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		4195233318EB20DA0066C05F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		4195233618EB20DA0066C05F /* Locator-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Locator-Info.plist"; sourceTree = "<group>"; };
+		4195233818EB20DA0066C05F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		4195233A18EB20DA0066C05F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		4195233C18EB20DA0066C05F /* Locator-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Locator-Prefix.pch"; sourceTree = "<group>"; };
+		4195233E18EB20DA0066C05F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		4195234018EB20DA0066C05F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		4195234118EB20DA0066C05F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		4195234418EB20DA0066C05F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		4195234718EB20DA0066C05F /* Locator.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Locator.xcdatamodel; sourceTree = "<group>"; };
+		4195234918EB20DA0066C05F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		4195234F18EB20DA0066C05F /* LocatorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LocatorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4195235018EB20DA0066C05F /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		4195235718EB20DA0066C05F /* LocatorTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "LocatorTests-Info.plist"; sourceTree = "<group>"; };
+		4195235918EB20DA0066C05F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		4195235B18EB20DA0066C05F /* LocatorTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LocatorTests.m; sourceTree = "<group>"; };
+		4195237518EB27630066C05F /* smslib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = smslib.h; sourceTree = "<group>"; };
+		4195237618EB27630066C05F /* smslib.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = smslib.m; sourceTree = "<group>"; };
+		4195237818EB28150066C05F /* AppController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppController.h; sourceTree = "<group>"; };
+		4195237918EB28150066C05F /* AppController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4195232818EB20DA0066C05F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4195232F18EB20DA0066C05F /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4195234C18EB20DA0066C05F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4195235218EB20DA0066C05F /* Cocoa.framework in Frameworks */,
+				4195235118EB20DA0066C05F /* XCTest.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4195232218EB20DA0066C05F = {
+			isa = PBXGroup;
+			children = (
+				4195236618EB210D0066C05F /* SMSLib */,
+				4195233418EB20DA0066C05F /* Locator */,
+				4195235518EB20DA0066C05F /* LocatorTests */,
+				4195232D18EB20DA0066C05F /* Frameworks */,
+				4195232C18EB20DA0066C05F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4195232C18EB20DA0066C05F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4195232B18EB20DA0066C05F /* Locator.app */,
+				4195234F18EB20DA0066C05F /* LocatorTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4195232D18EB20DA0066C05F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4195232E18EB20DA0066C05F /* Cocoa.framework */,
+				4195235018EB20DA0066C05F /* XCTest.framework */,
+				4195233018EB20DA0066C05F /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4195233018EB20DA0066C05F /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4195233118EB20DA0066C05F /* AppKit.framework */,
+				4195233218EB20DA0066C05F /* CoreData.framework */,
+				4195233318EB20DA0066C05F /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		4195233418EB20DA0066C05F /* Locator */ = {
+			isa = PBXGroup;
+			children = (
+				4195234018EB20DA0066C05F /* AppDelegate.h */,
+				4195234118EB20DA0066C05F /* AppDelegate.m */,
+				4195234318EB20DA0066C05F /* MainMenu.xib */,
+				4195234918EB20DA0066C05F /* Images.xcassets */,
+				4195234618EB20DA0066C05F /* Locator.xcdatamodeld */,
+				4195233518EB20DA0066C05F /* Supporting Files */,
+				4195237818EB28150066C05F /* AppController.h */,
+				4195237918EB28150066C05F /* AppController.m */,
+			);
+			path = Locator;
+			sourceTree = "<group>";
+		};
+		4195233518EB20DA0066C05F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4195233618EB20DA0066C05F /* Locator-Info.plist */,
+				4195233718EB20DA0066C05F /* InfoPlist.strings */,
+				4195233A18EB20DA0066C05F /* main.m */,
+				4195233C18EB20DA0066C05F /* Locator-Prefix.pch */,
+				4195233D18EB20DA0066C05F /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4195235518EB20DA0066C05F /* LocatorTests */ = {
+			isa = PBXGroup;
+			children = (
+				4195235B18EB20DA0066C05F /* LocatorTests.m */,
+				4195235618EB20DA0066C05F /* Supporting Files */,
+			);
+			path = LocatorTests;
+			sourceTree = "<group>";
+		};
+		4195235618EB20DA0066C05F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4195235718EB20DA0066C05F /* LocatorTests-Info.plist */,
+				4195235818EB20DA0066C05F /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4195236618EB210D0066C05F /* SMSLib */ = {
+			isa = PBXGroup;
+			children = (
+				4195237518EB27630066C05F /* smslib.h */,
+				4195237618EB27630066C05F /* smslib.m */,
+			);
+			name = SMSLib;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4195232A18EB20DA0066C05F /* Locator */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4195235F18EB20DA0066C05F /* Build configuration list for PBXNativeTarget "Locator" */;
+			buildPhases = (
+				4195232718EB20DA0066C05F /* Sources */,
+				4195232818EB20DA0066C05F /* Frameworks */,
+				4195232918EB20DA0066C05F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Locator;
+			productName = Locator;
+			productReference = 4195232B18EB20DA0066C05F /* Locator.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4195234E18EB20DA0066C05F /* LocatorTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4195236218EB20DA0066C05F /* Build configuration list for PBXNativeTarget "LocatorTests" */;
+			buildPhases = (
+				4195234B18EB20DA0066C05F /* Sources */,
+				4195234C18EB20DA0066C05F /* Frameworks */,
+				4195234D18EB20DA0066C05F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4195235418EB20DA0066C05F /* PBXTargetDependency */,
+			);
+			name = LocatorTests;
+			productName = LocatorTests;
+			productReference = 4195234F18EB20DA0066C05F /* LocatorTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4195232318EB20DA0066C05F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Marcel Stolz";
+				TargetAttributes = {
+					4195234E18EB20DA0066C05F = {
+						TestTargetID = 4195232A18EB20DA0066C05F;
+					};
+				};
+			};
+			buildConfigurationList = 4195232618EB20DA0066C05F /* Build configuration list for PBXProject "Locator" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4195232218EB20DA0066C05F;
+			productRefGroup = 4195232C18EB20DA0066C05F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4195232A18EB20DA0066C05F /* Locator */,
+				4195234E18EB20DA0066C05F /* LocatorTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4195232918EB20DA0066C05F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4195233918EB20DA0066C05F /* InfoPlist.strings in Resources */,
+				4195234A18EB20DA0066C05F /* Images.xcassets in Resources */,
+				4195233F18EB20DA0066C05F /* Credits.rtf in Resources */,
+				4195234518EB20DA0066C05F /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4195234D18EB20DA0066C05F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4195235A18EB20DA0066C05F /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4195232718EB20DA0066C05F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4195234818EB20DA0066C05F /* Locator.xcdatamodeld in Sources */,
+				4195237718EB27630066C05F /* smslib.m in Sources */,
+				4195234218EB20DA0066C05F /* AppDelegate.m in Sources */,
+				4195233B18EB20DA0066C05F /* main.m in Sources */,
+				4195237A18EB28150066C05F /* AppController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4195234B18EB20DA0066C05F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4195235C18EB20DA0066C05F /* LocatorTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4195235418EB20DA0066C05F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4195232A18EB20DA0066C05F /* Locator */;
+			targetProxy = 4195235318EB20DA0066C05F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		4195233718EB20DA0066C05F /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4195233818EB20DA0066C05F /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		4195233D18EB20DA0066C05F /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4195233E18EB20DA0066C05F /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		4195234318EB20DA0066C05F /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4195234418EB20DA0066C05F /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		4195235818EB20DA0066C05F /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4195235918EB20DA0066C05F /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4195235D18EB20DA0066C05F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		4195235E18EB20DA0066C05F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		4195236018EB20DA0066C05F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Locator/Locator-Prefix.pch";
+				INFOPLIST_FILE = "Locator/Locator-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		4195236118EB20DA0066C05F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Locator/Locator-Prefix.pch";
+				INFOPLIST_FILE = "Locator/Locator-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		4195236318EB20DA0066C05F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Locator.app/Contents/MacOS/Locator";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Locator/Locator-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "LocatorTests/LocatorTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		4195236418EB20DA0066C05F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Locator.app/Contents/MacOS/Locator";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Locator/Locator-Prefix.pch";
+				INFOPLIST_FILE = "LocatorTests/LocatorTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4195232618EB20DA0066C05F /* Build configuration list for PBXProject "Locator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4195235D18EB20DA0066C05F /* Debug */,
+				4195235E18EB20DA0066C05F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4195235F18EB20DA0066C05F /* Build configuration list for PBXNativeTarget "Locator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4195236018EB20DA0066C05F /* Debug */,
+				4195236118EB20DA0066C05F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4195236218EB20DA0066C05F /* Build configuration list for PBXNativeTarget "LocatorTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4195236318EB20DA0066C05F /* Debug */,
+				4195236418EB20DA0066C05F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		4195234618EB20DA0066C05F /* Locator.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				4195234718EB20DA0066C05F /* Locator.xcdatamodel */,
+			);
+			currentVersion = 4195234718EB20DA0066C05F /* Locator.xcdatamodel */;
+			path = Locator.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 4195232318EB20DA0066C05F /* Project object */;
+}
