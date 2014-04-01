@@ -8,6 +8,7 @@
 
 #import "AppController.h"
 #import <CoreWLAN/CoreWLAN.h>
+#import "smslib.h"
 
 @interface AppController ()
 
